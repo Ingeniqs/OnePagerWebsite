@@ -5,7 +5,7 @@ import {
   IconButton,
   useTheme,
 } from "@material-ui/core";
-import { ArrowDropDown, ArrowDropDownCircle } from "@material-ui/icons";
+import { ArrowDropDownCircle } from "@material-ui/icons";
 import React from "react";
 
 const useStyles = makeStyles((theme) => {
@@ -66,8 +66,8 @@ export default function Header() {
           </Typography>
         </Box>
         <Box m={2}>
-          <IconButton variant="contained" rounded color="inherit" size="large">
-            <ArrowDropDownCircle fontSize="large" />
+          <IconButton variant="contained" rounded color="#FF8A3D" size="large">
+            <ArrowDropDownCircle fontSize="large" color="#FF8A3D" />
           </IconButton>
         </Box>
       </Box>

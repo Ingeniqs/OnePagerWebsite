@@ -12,6 +12,8 @@ const useStyles = makeStyles({
     minWidth: 275,
     margin: 10,
     color: "white",
+    borderRadius: 25,
+    border: 0
   },
   bullet: {
     display: "inline-block",
@@ -21,7 +23,7 @@ const useStyles = makeStyles({
   title: {
     fontSize: 26,
     color: "white",
-    fontFamily: "Share Tech"
+    fontFamily: "Share Tech",
   },
   pos: {
     marginBottom: 12,
@@ -33,7 +35,11 @@ export default function ServiceCard({ data }) {
   const classes = useStyles();
 
   return (
-    <Card className={classes.root} variant="outlined" style={{backgroundColor: `${data.color}`}}>
+    <Card
+      className={classes.root}
+      variant="outlined"
+      style={{ background: `${data.color}` }}
+    >
       <CardContent>
         <Typography
           className={classes.title}
@@ -48,7 +54,7 @@ export default function ServiceCard({ data }) {
         <Typography className={classes.pos} color="textSecondary">
           Servicio
         </Typography>
-        <Divider variant="middle" style={{backgroundColor: "white"}} />
+        <Divider variant="middle" style={{ backgroundColor: "white" }} />
         <br />
         <Typography variant="body2" component="p">
           {data.content}
@@ -56,7 +62,7 @@ export default function ServiceCard({ data }) {
         </Typography>
         <Typography variant="h2" component="h4">
           <Typography variant="h6" component="p">
-            <br/>
+            <br />
             desde
             <br />
           </Typography>

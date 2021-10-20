@@ -35,19 +35,19 @@
       "title": "Portafolio Web",
       "content": "Generamos tu portafolio en línea.",
       "price": "$00",
-      "color": "#ff8a3d"
+      "color": "linear-gradient(45deg, #FF8A3D 30%, #FFA727 90%)"
     },
     {
       "title": "Página para tu negocio",
       "content": "Genera una página web para tu negocio.",
       "price": "$00",
-      "color": "#0B132B"
+      "color": "linear-gradient(45deg, #0B132B 30%, #0B135B 90%)"
     },
     {
       "title": "Aceleración digital",
       "content": "Mejora tu presencia digital.",
       "price": "$00",
-      "color": "#3f7cac"
+      "color": "linear-gradient(45deg, #3F7CAC 30%, #00D0FF 90%)"
     }
   ]
 }
