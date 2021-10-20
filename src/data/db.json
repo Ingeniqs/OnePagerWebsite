@@ -15,17 +15,17 @@
   },
   "features": [
     {
-      "title": "Servicio 1",
+      "title": "Paso 1",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "icon": "fingerprint"
     },
     {
-      "title": "Servicio 2",
+      "title": "Paso 2",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "icon": "add_circle"
     },
     {
-      "title": "Servicio 3",
+      "title": "Paso 3",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "icon": "face"
     }
