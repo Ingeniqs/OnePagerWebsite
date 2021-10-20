@@ -13,7 +13,7 @@ import {
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import logoText from "../img/logo_texto.png";
-import React, { useState } from "react";
+import React from "react";
 
 const useStyles = makeStyles((theme) => {
   return {
