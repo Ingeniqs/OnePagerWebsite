@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => {
     main: {
       position: "relative",
       zIndex: 10,
-      minWidth: "100%",
+      maxWidth: "100%",
       height: "100%",
     },
     title: {
@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => {
       fontFamily: "Share Tech",
     },
     container: {
-      width: "100vw",
+      width: "100%",
       height: 600,
     },
     appbarSpace: theme.mixins.toolbar,
