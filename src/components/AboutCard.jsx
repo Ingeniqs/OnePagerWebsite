@@ -7,38 +7,35 @@ const useStyles = makeStyles({
   responsive: {
     width: "100%",
     height: "auto",
-    borderRadius: "10%"
+    borderRadius: "10%",
   },
 });
 
-export default function AboutCard({ data, imagePosition, isMobile}) {
+export default function AboutCard({ data, imagePosition, isMobile }) {
   const classes = useStyles();
   const [spacing, setSpacing] = useState({
-      right: 0,
-      left: 0,
-    })
+    right: 0,
+    left: 0,
+  });
 
   useEffect(() => {
-    if (imagePosition == "left") {
+    if (imagePosition === "left") {
       setSpacing({
         right: 4,
         left: 0,
       });
-    } 
-    else if (imagePosition == "right") {
+    } else if (imagePosition === "right") {
       setSpacing({
         right: 0,
         left: 4,
       });
-    } 
-    else if (imagePosition == 'mobile') {
+    } else if (imagePosition === "mobile") {
       setSpacing({
         right: 0,
         left: 0,
       });
     }
-  }, [isMobile])  
-  
+  }, [isMobile]);
 
   const ImageCard = () => (
     <Grid item sm={12} md={6} direction="column">
@@ -51,13 +48,13 @@ export default function AboutCard({ data, imagePosition, isMobile}) {
   const InfoCard = () => (
     <Grid item sm={12} md={6} direction="column">
       <Box mb={2}>
-      <Typography
-        variant="h3"
-        component="h2"
-        style={{ fontFamily: "Share Tech" }}
-      >
-        {data.title.toUpperCase()}
-      </Typography>
+        <Typography
+          variant="h3"
+          component="h2"
+          style={{ fontFamily: "Share Tech" }}
+        >
+          {data.title.toUpperCase()}
+        </Typography>
       </Box>
       <Typography variant="h6" component="p">
         {data.content}
@@ -67,7 +64,7 @@ export default function AboutCard({ data, imagePosition, isMobile}) {
 
   return (
     <Box mt={3} pb={3} pt={3}>
-      {imagePosition == "left" ? (
+      {imagePosition === "left" ? (
         <Grid
           container
           direction="row"
