@@ -35,7 +35,7 @@ export default function AboutCard({ data, imagePosition, isMobile }) {
         left: 0,
       });
     }
-  }, [isMobile]);
+  }, [imagePosition]);
 
   const ImageCard = () => (
     <Grid item sm={12} md={6} direction="column">
