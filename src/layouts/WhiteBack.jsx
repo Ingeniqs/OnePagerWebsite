@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => {
     },
     back: {
       background: "fefefe",
-      width: "100vw",
+      width: "100%",
     },
   };
 });

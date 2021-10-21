@@ -4,7 +4,7 @@ import AboutCard from "../components/AboutCard";
 import ColorDivider from "../components/ColorDivider";
 
 export default function About({data}) {
-  const theme= useTheme()
+  const theme = useTheme()
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
@@ -13,6 +13,7 @@ export default function About({data}) {
       pb={6}
       pt={6}
       id="nosotros"
+      maxWidth="100vw"
     >
       <Container alignItems="center" justifyContent="center">
         <Box mb={2}>

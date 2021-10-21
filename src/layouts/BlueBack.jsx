@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => {
     },
     back: {
       background: "linear-gradient(45deg, #3F7CAC 30%, #00D0FF 90%)",
-      width: "100vw",
+      width: "100%",
     },
   };
 });
