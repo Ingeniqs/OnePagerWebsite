@@ -6,7 +6,6 @@ import Navbar from './sections/Navbar';
 import data from "./data/db.json"
 import Services from './sections/Services';
 import Contact from './sections/Contact';
-import Chars from './sections/Chars';
 
 const theme = createMuiTheme({
   palette: {
