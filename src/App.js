@@ -28,10 +28,10 @@ function App() {
       <div>
         <Navbar />
         <Header />
-        <About data={data.about} />
         <Features data={data.features} />
+        <About data={data.about} />
         <Services data={data.services} />
-        <Contact/>
+        <Contact />
       </div>
     </ThemeProvider>
   );
