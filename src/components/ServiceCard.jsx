@@ -12,7 +12,7 @@ const useStyles = makeStyles({
     minWidth: 275,
     margin: 10,
     color: "white",
-    borderRadius: 25,
+    borderRadius: 15,
     border: 0
   },
   bullet: {
