@@ -49,5 +49,10 @@
       "price": "$00",
       "color": "linear-gradient(45deg, #3F7CAC 30%, #00D0FF 90%)"
     }
+  ],
+  "projects": [
+    { "title": "", "description": "", "image": "", "demo": "", "link": "" },
+    { "title": "", "description": "", "image": "", "demo": "", "link": "" },
+    { "title": "", "description": "", "image": "", "demo": "", "link": "" }
   ]
 }
