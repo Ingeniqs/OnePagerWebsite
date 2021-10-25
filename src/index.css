@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech&display=swap");
 
 body {
   margin: 0;
@@ -11,7 +11,7 @@ body {
 
 .subtitle {
   text-transform: uppercase;
-  font-family: 'Share Tech', sans-serif;
+  font-family: "Share Tech", sans-serif;
 }
 
 /* width */
@@ -32,4 +32,22 @@ body {
 ::-webkit-scrollbar-thumb {
   background: #ffa600;
   border-radius: 10px;
+}
+
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -5px; /* gutter size offset */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 5px; /* gutter size */
+  background-clip: padding-box;
+}
+
+/* Style your items */
+.my-masonry-grid_column > .Masonry-item {
+  /* change div to reference your elements you put in <Masonry> */
+  margin-bottom: 5px;
 }

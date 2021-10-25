@@ -51,8 +51,29 @@
     }
   ],
   "projects": [
-    { "title": "", "description": "", "image": "", "demo": "", "link": "" },
-    { "title": "", "description": "", "image": "", "demo": "", "link": "" },
-    { "title": "", "description": "", "image": "", "demo": "", "link": "" }
+    {
+      "title": "Hello world",
+      "description": "Lorem ipsum dolor sit amet",
+      "image": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "demo": "",
+      "link": "",
+      "background": "linear-gradient(45deg, #0B132B 30%, #0B135B 90%)"
+    },
+    {
+      "title": "",
+      "description": "",
+      "image": "",
+      "demo": "",
+      "link": "",
+      "background": ""
+    },
+    {
+      "title": "",
+      "description": "",
+      "image": "",
+      "demo": "",
+      "link": "",
+      "background": ""
+    }
   ]
 }

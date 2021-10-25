@@ -24,6 +24,7 @@ const useStyles = makeStyles({
     fontSize: 26,
     color: "white",
     fontFamily: "Share Tech",
+    marginTop: 10
   },
   pos: {
     marginBottom: 12,
@@ -37,7 +38,7 @@ export default function ServiceCard({ data }) {
   return (
     <Card
       className={classes.root}
-      variant="outlined"
+      variant="contained"
       style={{ background: `${data.color}` }}
     >
       <CardContent>
@@ -50,13 +51,12 @@ export default function ServiceCard({ data }) {
         >
           {data.title}
         </Typography>
-        <Typography variant="h5" component="h2"></Typography>
         <Typography className={classes.pos} color="textSecondary">
           Servicio
         </Typography>
         <Divider variant="middle" style={{ backgroundColor: "white" }} />
         <br />
-        <Typography variant="body2" component="p">
+        <Typography variant="body1" component="p">
           {data.content}
           <br />
         </Typography>
