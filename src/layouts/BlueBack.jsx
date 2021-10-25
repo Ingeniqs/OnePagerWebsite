@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => {
   };
 });
 
-export default function BlueBack({ title, idx, children }) {
+export default function BlueBack({ title, idx, description, children }) {
   const theme = useTheme();
   const classes = useStyles(theme);
 
@@ -43,6 +43,13 @@ export default function BlueBack({ title, idx, children }) {
           </Typography>
         </Box>
         <ColorDivider color="white" />
+        {description && (
+          <Box pt={6} pb={2}>
+            <Typography paragraph style={{ fontFamily: "Josefin Sans" }}>
+              {description}
+            </Typography>
+          </Box>
+        )}
         <Box mt={3}>{children}</Box>
       </Container>
     </Box>

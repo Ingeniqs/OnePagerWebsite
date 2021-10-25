@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => {
   };
 });
 
-export default function WhiteBack({ title, idx, children }) {
+export default function WhiteBack({ title, idx, description, children }) {
   const theme = useTheme();
   const classes = useStyles(theme);
 
@@ -43,6 +43,13 @@ export default function WhiteBack({ title, idx, children }) {
           </Typography>
         </Box>
         <ColorDivider />
+        {description && (
+          <Box pt={6} pb={2}>
+            <Typography paragraph style={{ fontFamily: "Josefin Sans" }}>
+              {description}
+            </Typography>
+          </Box>
+        )}
         <Box mt={3}>{children}</Box>
       </Container>
     </Box>
