@@ -34,9 +34,14 @@ export default function ProjectCard({ data }) {
 
   return (
     <Card
-      sx={{ maxWidth: 345 }}
+      sx={{ maxWidth: "auto" }}
       className="Masonry-item"
-      style={{ background: data.background, color: "white", borderRadius: 15, margin: 0 }}
+      style={{
+        background: data.background,
+        color: "white",
+        borderRadius: 15,
+        margin: 0,
+      }}
     >
       <CardMedia
         component="img"
