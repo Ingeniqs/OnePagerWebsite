@@ -7,6 +7,7 @@ import data from "./data/db.json";
 import Services from "./sections/Services";
 import Contact from "./sections/Contact";
 import Projects from "./sections/Projects";
+import Quote from "./sections/Quote";
 
 const theme = createMuiTheme({
   palette: {
@@ -29,6 +30,7 @@ function App() {
       <div>
         <Navbar />
         <Header />
+        <Quote />
         <Features data={data.features} />
         <About data={data.about} />
         <Projects data={data.projects} />
