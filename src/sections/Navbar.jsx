@@ -14,6 +14,7 @@ import {
 import MenuIcon from "@material-ui/icons/Menu";
 import logoText from "../img/logo_texto.png";
 import React from "react";
+import { Link as SmoothLink } from "react-scroll";
 
 const useStyles = makeStyles((theme) => {
   return {
@@ -30,7 +31,7 @@ const useStyles = makeStyles((theme) => {
     fullList: {
       width: "auto",
     },
-    appbarSpace: theme.mixins.toolbar
+    appbarSpace: theme.mixins.toolbar,
   };
 });
 
@@ -57,6 +58,8 @@ export default function Navbar() {
     setState({ ...state, [anchor]: open });
   };
 
+  const items = ["Identidad", "Nosotros", "Proyectos", "Servicios", "Contáctanos"]
+
   const list = (anchor) => (
     <div
       role="presentation"
@@ -65,11 +68,13 @@ export default function Navbar() {
       className={classes.list}
     >
       <List>
-        {["Nosotros", "Servicios", "Contáctanos"].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
+        {items.map(
+          (text, index) => (
+            <ListItem button key={text}>
+              <ListItemText primary={text} />
+            </ListItem>
+          )
+        )}
       </List>
     </div>
   );
@@ -101,17 +106,65 @@ export default function Navbar() {
             </div>
           ) : (
             <div className={classes.links}>
-              <Button edge="right" href="#nosotros" color="inherit">
-                Nosotros
-              </Button>
               <Button href="#identidad" color="inherit">
-                Identidad
+                <SmoothLink
+                  activeClass="active"
+                  to="identidad"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  Identidad
+                </SmoothLink>
+              </Button>
+              <Button edge="right" href="#nosotros" color="inherit">
+                <SmoothLink
+                  activeClass="active"
+                  to="nosotros"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  Nosotros
+                </SmoothLink>
+              </Button>
+              <Button edge="right" href="#proyectos" color="inherit">
+                <SmoothLink
+                  activeClass="active"
+                  to="proyectos"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  Proyectos
+                </SmoothLink>
               </Button>
               <Button href="#servicios" color="inherit">
-                Servicios
+                <SmoothLink
+                  activeClass="active"
+                  to="proyectos"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  Proyectos
+                </SmoothLink>
               </Button>
               <Button href="#contactanos" color="inherit">
-                Contáctanos
+                <SmoothLink
+                  activeClass="active"
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  Contáctanos
+                </SmoothLink>
               </Button>
             </div>
           )}
