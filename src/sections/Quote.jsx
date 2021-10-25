@@ -8,7 +8,7 @@ export default function Quote() {
       style={{ position: "relative", zIndex: 10 }}
       pb={6}
       pt={6}
-      id="nosotros"
+      id="quote"
       maxWidth="100vw"
     >
       <Container alignItems="center" justifyContent="center">
