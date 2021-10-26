@@ -34,6 +34,7 @@ export default function About({data}) {
               data={data.mission}
               imagePosition="left"
               isMobile={isMobile}
+              background={data.background}
             />
             <AboutCard
               data={data.vision}

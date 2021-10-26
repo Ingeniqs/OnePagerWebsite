@@ -17,6 +17,7 @@ export default function AboutCard({ data, imagePosition, isMobile }) {
     right: 0,
     left: 0,
   });
+  const [dir, setDir] = useState("row");
 
   useEffect(() => {
     if (imagePosition === "left") {
@@ -24,16 +25,19 @@ export default function AboutCard({ data, imagePosition, isMobile }) {
         right: 4,
         left: 0,
       });
+      setDir("row");
     } else if (imagePosition === "right") {
       setSpacing({
         right: 0,
         left: 4,
       });
+      setDir("row");
     } else if (imagePosition === "mobile") {
       setSpacing({
         right: 0,
         left: 0,
       });
+      setDir("column")
     }
   }, [imagePosition]);
 
@@ -63,7 +67,7 @@ export default function AboutCard({ data, imagePosition, isMobile }) {
   );
 
   return (
-    <Box mt={3} pb={3} pt={3}>
+    <Box mt={3} pb={3} pt={3} style={{ color: "white" }}>
       {imagePosition === "left" ? (
         <Grid
           container
@@ -71,8 +75,15 @@ export default function AboutCard({ data, imagePosition, isMobile }) {
           justifyContent="center"
           alignItems="flex-start"
         >
-          <ImageCard />
-          <InfoCard />
+          <Box
+            p={3}
+            display="flex"
+            flexDirection={dir}
+            style={{ background: data.background, borderRadius: "15px" }}
+          >
+            <ImageCard />
+            <InfoCard />
+          </Box>
         </Grid>
       ) : (
         <Grid
@@ -81,8 +92,15 @@ export default function AboutCard({ data, imagePosition, isMobile }) {
           justifyContent="center"
           alignItems="flex-start"
         >
-          <InfoCard />
-          <ImageCard />
+          <Box
+            p={3}
+            display="flex"
+            flexDirection={dir}
+            style={{ background: data.background, borderRadius: "15px" }}
+          >
+            <InfoCard />
+            <ImageCard />
+          </Box>
         </Grid>
       )}
     </Box>

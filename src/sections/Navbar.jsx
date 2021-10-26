@@ -145,13 +145,13 @@ export default function Navbar() {
               <Button href="#servicios" color="inherit">
                 <SmoothLink
                   activeClass="active"
-                  to="proyectos"
+                  to="servicios"
                   spy={true}
                   smooth={true}
                   offset={-70}
                   duration={500}
                 >
-                  Proyectos
+                  Servicios
                 </SmoothLink>
               </Button>
               <Button href="#contactanos" color="inherit">
