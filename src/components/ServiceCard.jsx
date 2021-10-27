@@ -70,7 +70,7 @@ export default function ServiceCard({ data }) {
         </Typography>
       </CardContent>
       <CardActions>
-        <ServiceModal />
+        <ServiceModal modalData={data} />
       </CardActions>
     </Card>
   );

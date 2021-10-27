@@ -13,13 +13,14 @@ const useStyles = makeStyles((theme) => ({
   },
   paper: {
     backgroundColor: theme.palette.background.paper,
-    border: "2px solid #000",
     boxShadow: theme.shadows[5],
     padding: theme.spacing(2, 4, 3),
+    maxWidth: "90vw",
+    borderRadius: 15
   },
 }));
 
-export default function ServiceModal() {
+export default function ServiceModal({title, modalData}) {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
 
@@ -50,9 +51,9 @@ export default function ServiceModal() {
       >
         <Fade in={open}>
           <div className={classes.paper}>
-            <h2 id="transition-modal-title">Transition modal</h2>
+            <h2 id="transition-modal-title">{modalData.title}</h2>
             <p id="transition-modal-description">
-              react-transition-group animates me.
+              {modalData.description}
             </p>
           </div>
         </Fade>
