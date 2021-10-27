@@ -62,9 +62,19 @@ export default function Header() {
             align="center"
             mt={4}
             style={{ fontFamily: "Share Tech", color: "white" }}
+            gutterBottom
           >
             Soluciones digitales a tu alcance
           </Typography>
+          <Box display="flex" justifyContent="center">
+          <Typography paragraph align="center" style={{ color: "white", fontSize: 20, maxWidth: "70%" }}>
+            Entra al mundo digital con las herramientas perfectas y
+            personalizadas a tu conveniencia. En Ingeniqs, ¡tú eres el que
+            manda! Las herramientas, planillas, estilos, opciones, colores,
+            atención y todo lo que necesitas para crear la página web ideal de
+            manera sencilla, al alcance de un click.
+          </Typography>
+          </Box>
         </Box>
         <Box m={2}>
           <IconButton variant="contained" rounded size="large">

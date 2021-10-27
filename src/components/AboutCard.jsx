@@ -9,6 +9,14 @@ const useStyles = makeStyles({
     height: "auto",
     borderRadius: "10%",
   },
+  backpart: {
+    backgroundColor: "#f5f5f5",
+    minWidth: "90vw",
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    zIndex: -1,
+  },
 });
 
 export default function AboutCard({ data, imagePosition, isMobile }) {
@@ -37,12 +45,18 @@ export default function AboutCard({ data, imagePosition, isMobile }) {
         right: 0,
         left: 0,
       });
-      setDir("column")
+      setDir("column");
     }
   }, [imagePosition]);
 
   const ImageCard = () => (
-    <Grid item sm={12} md={6} direction="column">
+    <Grid
+      item
+      sm={12}
+      md={6}
+      direction="column"
+      style={{ zIndex: 10, position: "relative" }}
+    >
       <Box mr={spacing.right} ml={spacing.left}>
         <img src={data.image} alt={data.title} className={classes.responsive} />
       </Box>
@@ -50,19 +64,34 @@ export default function AboutCard({ data, imagePosition, isMobile }) {
   );
 
   const InfoCard = () => (
-    <Grid item sm={12} md={6} direction="column">
-      <Box mb={2}>
-        <Typography
-          variant="h3"
-          component="h2"
-          style={{ fontFamily: "Share Tech" }}
-        >
-          {data.title.toUpperCase()}
+    <Grid
+      item
+      sm={12}
+      md={6}
+      direction="column"
+      style={{ position: "relative" }}
+    >
+      <Box
+        height="100%"
+        display="flex"
+        flexDirection="column"
+        justifyContent="center"
+        alignItems="center"
+      >
+        <Box mb={2}>
+          <Typography
+            variant="h3"
+            component="h2"
+            style={{ fontFamily: "Share Tech" }}
+            align={imagePosition}
+          >
+            {data.title.toUpperCase()}
+          </Typography>
+        </Box>
+        <Typography variant="h6" component="p">
+          {data.content}
         </Typography>
       </Box>
-      <Typography variant="h6" component="p">
-        {data.content}
-      </Typography>
     </Grid>
   );
 
@@ -74,16 +103,22 @@ export default function AboutCard({ data, imagePosition, isMobile }) {
           direction="row"
           justifyContent="center"
           alignItems="flex-start"
+          position="relative"
         >
           <Box
             p={3}
             display="flex"
             flexDirection={dir}
-            style={{ background: data.background, borderRadius: "15px" }}
+            style={{
+              background: data.background,
+              borderRadius: "15px",
+              zIndex: 1,
+            }}
           >
             <ImageCard />
             <InfoCard />
           </Box>
+          <div className={classes.backpart} />
         </Grid>
       ) : (
         <Grid
