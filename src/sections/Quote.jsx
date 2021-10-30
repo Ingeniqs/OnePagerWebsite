@@ -2,7 +2,7 @@ import { FormatQuote } from "@mui/icons-material";
 import { Box, Container, Typography } from "@mui/material";
 import React from "react";
 
-export default function Quote() {
+export default function Quote({ data }) {
   return (
     <Box
       style={{ position: "relative", zIndex: 10 }}
@@ -10,6 +10,7 @@ export default function Quote() {
       pt={6}
       id="quote"
       maxWidth="100vw"
+      minHeight="30vh"
     >
       <Container alignItems="center" justifyContent="center">
         <Box mb={2} display="flex" justifyContent="center">
@@ -21,7 +22,7 @@ export default function Quote() {
           style={{ fontFamily: "Share Tech" }}
           align="center"
         >
-          A very cool Quote
+          {data.text}
         </Typography>
         <Typography
           variant="body1"
@@ -29,7 +30,7 @@ export default function Quote() {
           style={{ fontFamily: "Josefin Sans" }}
           align="right"
         >
-          - Author
+          - {data.author}
         </Typography>
       </Container>
     </Box>

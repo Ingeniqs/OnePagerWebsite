@@ -30,7 +30,7 @@ function App() {
       <div>
         <Navbar />
         <Header />
-        <Quote />
+        <Quote data={data.quote} />
         <Features data={data.features} />
         <About data={data.about} />
         <Projects data={data.projects} />
