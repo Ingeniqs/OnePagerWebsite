@@ -4,6 +4,7 @@ import {
   Box,
   IconButton,
   useTheme,
+  useMediaQuery,
 } from "@material-ui/core";
 import { ArrowDropDownCircle } from "@material-ui/icons";
 import React from "react";
@@ -44,6 +45,7 @@ const useStyles = makeStyles((theme) => {
 export default function Header() {
   const theme = useTheme();
   const classes = useStyles(theme);
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
     <div className={classes.container}>
@@ -66,15 +68,21 @@ export default function Header() {
           >
             Soluciones digitales a tu alcance
           </Typography>
-          <Box display="flex" justifyContent="center">
-          <Typography paragraph align="center" style={{ color: "white", fontSize: 20, maxWidth: "70%" }}>
-            Entra al mundo digital con las herramientas perfectas y
-            personalizadas a tu conveniencia. En Ingeniqs, ¡tú eres el que
-            manda! Las herramientas, planillas, estilos, opciones, colores,
-            atención y todo lo que necesitas para crear la página web ideal de
-            manera sencilla, al alcance de un click.
-          </Typography>
-          </Box>
+          {!isMobile && (
+            <Box display="flex" justifyContent="center">
+              <Typography
+                paragraph
+                align="center"
+                style={{ color: "white", fontSize: 20, maxWidth: "70%" }}
+              >
+                Entra al mundo digital con las herramientas perfectas y
+                personalizadas a tu conveniencia. En Ingeniqs, ¡tú eres el que
+                manda! Las herramientas, planillas, estilos, opciones, colores,
+                atención y todo lo que necesitas para crear la página web ideal
+                de manera sencilla, al alcance de un click.
+              </Typography>
+            </Box>
+          )}
         </Box>
         <Box m={2}>
           <IconButton variant="contained" rounded size="large">
