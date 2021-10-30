@@ -16,6 +16,7 @@ const useStyles = makeStyles((theme) => {
       top: 0,
       left: 0,
       zIndex: -1,
+      backgroundAttachment: "fixed"
     },
     root: {
       color: "white",

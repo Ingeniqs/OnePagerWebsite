@@ -22,6 +22,7 @@ const useStyles = makeStyles((theme) => {
       filter: "brightness(0.5)",
       top: 0,
       left: 0,
+      backgroundAttachment: "fixed",
     },
     main: {
       position: "relative",
