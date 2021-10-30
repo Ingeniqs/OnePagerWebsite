@@ -36,21 +36,21 @@
     {
       "title": "Portafolio Web",
       "content": "Generamos tu portafolio en línea. Empieza a tener presencia digital en la industria.",
-      "price": "$00",
+      "price": "$1,499",
       "color": "linear-gradient(45deg, #FF8A3D 30%, #FFA727 90%)",
       "description": "Crea un portafolio personal, que cumpla todas tus necesidades. Artistas, programadores, ingenieros, bienes raices, comunicadores y todo lo que necesites comunicar, esta es tu mejor forma de darte a conocer."
     },
     {
       "title": "Página para tu negocio",
       "content": "Genera una página web para tu negocio. Simple y práctica para presentar tus ideas al mundo.",
-      "price": "$00",
+      "price": "$3,999",
       "color": "linear-gradient(45deg, #0B132B 30%, #0B135B 90%)",
       "description": "Da la cara con orgullo. Mas del 70% de tus posibles clientes ven primero tu pagina web. Nosotros nos aseguramos que esto sea al nivel de tu empresa, y que tus clientes sean impactados por tu profecionalidad. De solo una pagina, o incluso varias, has que tu vision publica sea reluciente."
     },
     {
       "title": "Páginas dinámicas",
       "content": "Crea una pagina con contenido flexible. Puede ser blogs, menús, e-shops, u obtén mas clientes.",
-      "price": "$00",
+      "price": "$9,999",
       "color": "linear-gradient(45deg, #3F7CAC 30%, #00D0FF 90%)",
       "description": "¿Tienes mucho pero poco tiempo? Las paginas dinamicas permiten a tus clientes ver informacion compleja de forma facil y rapida. Todo sin que tu gastes tiempo. Mete algoritmos de busqueda, organiza por tipo, actualiza de forma constante y obten analitica, todo sin gastar tu tiempo."
     }
