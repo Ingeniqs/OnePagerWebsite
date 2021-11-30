@@ -58,7 +58,7 @@ export default function Navbar() {
     setState({ ...state, [anchor]: open });
   };
 
-  const items = ["Identidad", "Nosotros", "Proyectos", "Servicios", "Contáctanos"]
+  const items = ["Identidad", "Nosotros", "Servicios", "Contáctanos"] // Add proyectos
 
   const list = (anchor) => (
     <div
@@ -130,6 +130,7 @@ export default function Navbar() {
                   Nosotros
                 </SmoothLink>
               </Button>
+              {/*}
               <Button edge="right" href="#proyectos" color="inherit">
                 <SmoothLink
                   activeClass="active"
@@ -142,6 +143,7 @@ export default function Navbar() {
                   Proyectos
                 </SmoothLink>
               </Button>
+              */}
               <Button href="#servicios" color="inherit">
                 <SmoothLink
                   activeClass="active"

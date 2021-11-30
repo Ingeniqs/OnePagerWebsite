@@ -6,7 +6,7 @@ import Navbar from "./sections/Navbar";
 import data from "./data/db.json";
 import Services from "./sections/Services";
 import Contact from "./sections/Contact";
-import Projects from "./sections/Projects";
+// import Projects from "./sections/Projects";
 import Quote from "./sections/Quote";
 
 const theme = createMuiTheme({
@@ -33,7 +33,7 @@ function App() {
         <Quote data={data.quote} />
         <Features data={data.features} />
         <About data={data.about} />
-        <Projects data={data.projects} />
+        {/**<Projects data={data.projects} style={{ display: "none" }} />*/}
         <Services data={data.services} />
         <Contact />
       </div>
